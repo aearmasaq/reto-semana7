@@ -1,0 +1,17 @@
+@import "../1-Settings/settings.scss";
+
+h2 {
+    font-family: $fontHelvetica;
+  }
+  
+  h1,
+  p,
+  span {
+    font-family: Arial;
+  }
+  
+  a {
+    text-decoration: none;
+    font-family: $fontHelvetica;
+  }
+  

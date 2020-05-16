@@ -1,0 +1,27 @@
+@font-face {
+  src: url("../../fonts/Helvetica.ttf");
+  font-family: "Helvetica";
+}
+
+@font-face {
+  src: url("../../fonts/Gilroy-Bold.ttf");
+  font-family: "Gilroy-Bold";
+}
+
+/* Variables de fuente*/
+/*Breakpoints*/
+h2 {
+  font-family: "Helvetica";
+}
+
+h1,
+p,
+span {
+  font-family: Arial;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Helvetica";
+}
+/*# sourceMappingURL=elements.css.map */

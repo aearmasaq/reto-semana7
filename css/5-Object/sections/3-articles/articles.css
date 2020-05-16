@@ -1,0 +1,186 @@
+@font-face {
+  src: url("../../fonts/Helvetica.ttf");
+  font-family: "Helvetica";
+}
+
+@font-face {
+  src: url("../../fonts/Gilroy-Bold.ttf");
+  font-family: "Gilroy-Bold";
+}
+
+/* Variables de fuente*/
+/*Breakpoints*/
+/*articulo horizontal*/
+.main-article-horizontal {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin-bottom: 2.5em;
+      grid-template-areas: "infoPost imagen";
+}
+
+.main-article-horizontal .imagen-article {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: imagen;
+}
+
+.main-article-horizontal .article-information {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: infoPost;
+}
+
+.main-article-horizontal .article-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.imagen-article img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*Articulo vertical*/
+.article-container-vertical {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 296px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 296px));
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-gap: 20px;
+}
+
+.article-container-vertical .article {
+  width: 100%;
+  height: auto;
+}
+
+.article-container-vertical .article .article-information .article-title {
+  font-size: 1.4em;
+  margin: 13px 0;
+}
+
+.article-container-vertical .article .article-information .article-information-text {
+  margin-bottom: 13px;
+}
+
+/* articulo de mas info de articulos */
+.popular-aticle {
+  width: 100%;
+  height: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 1.5em;
+  border-bottom: 1px solid #1a1818;
+}
+
+.popular-aticle a {
+  text-transform: uppercase;
+  color: #316099;
+  font-weight: bold;
+}
+
+/*articulo horizontal*/
+.horizontal-articles {
+  width: 100%;
+  height: auto;
+}
+
+.title-horizontal-articles {
+  margin: 2.5em 0 1.9em 0;
+  color: #356ead;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+.horizontal-article-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-row-gap: 32px;
+}
+
+.article-horizontal-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  grid-column-gap: 20px;
+}
+
+.article-information-horizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.all-articles-pages {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn-page {
+  border: 0;
+  background: none;
+  color: #356ead;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.btn-page .arrow-left {
+  margin-right: 1.4em;
+  display: inline-block;
+}
+
+.btn-page .arrow-right {
+  margin-left: 1.4em;
+  display: inline-block;
+}
+/*# sourceMappingURL=articles.css.map */
